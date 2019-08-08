@@ -1,0 +1,125 @@
+<template>
+  <lightning-card title="Jack's Blackjack" icon-name="standard:opportunity">
+    <p aria-setsize="5" style="text-align:center">{console1}</p>
+    <p style="text-align:center">{console2}</p>
+    <p style="text-align:center">{console3}</p>
+    <pre></pre>
+    <form name="blackjack">
+      <table>
+        <tr>
+          <td colspan="2" style="padding:0 15px 0 15px;">
+            <lightning-input
+              label="My Cards:"
+              type="text"
+              name="mycards"
+              id="mycards"
+              disabled="True"
+              value={mycards}
+            ></lightning-input>
+          </td>
+          <td colspan="2" style="padding:0 15px 0 15px;">
+            <lightning-input
+              label="Dealer's Cards:"
+              type="text"
+              name="dealerscards"
+              id="dealerscards"
+              disabled="True"
+              value={dealerscards}
+            ></lightning-input>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <lightning-input
+              type="button"
+              name="hit"
+              value="Hit"
+              onclick={hit}
+            ></lightning-input>
+          </td>
+          <td>
+            <lightning-input
+              type="button"
+              name="stand"
+              value="Stand"
+              onclick={stand}
+            ></lightning-input>
+          </td>
+          <td>
+            <lightning-input
+              type="button"
+              name="split"
+              value="Split"
+              onclick={split}
+              disabled="True"
+            ></lightning-input>
+          </td>
+          <td>
+            <lightning-input
+              type="button"
+              name="doubledown"
+              value="Double Down"
+              onclick={doubledown}
+            ></lightning-input>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <lightning-input
+              type="button"
+              name="betfive"
+              value="Bet Five"
+              onclick={betfive}
+            ></lightning-input>
+          </td>
+          <td>
+            <lightning-input
+              type="button"
+              name="betten"
+              value="Bet Ten"
+              onclick={betten}
+            ></lightning-input>
+          </td>
+          <td>
+            <lightning-input
+              type="button"
+              name="clearbet"
+              value="Clear Bet"
+              onclick={clearbet}
+            ></lightning-input>
+          </td>
+          <td>
+            <lightning-input
+              type="button"
+              id="dealhand"
+              value="Deal Hand"
+              onclick={dealhand}
+            ></lightning-input>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <lightning-input
+              label="Total Chips:"
+              type="text"
+              name="totalchips"
+              id="totalchips"
+              disabled="True"
+              value={totalchips}
+            ></lightning-input>
+          </td>
+          <td colspan="2">
+            <lightning-input
+              label="My Bet:"
+              type="text"
+              name="mybet"
+              id="mybet"
+              disabled="True"
+              value={mybet}
+            ></lightning-input>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </lightning-card>
+</template>
