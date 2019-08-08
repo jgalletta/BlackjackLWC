@@ -1,6 +1,8 @@
 # BlackjackLWC
 Simple Blackjack LWC, drops right into Salesforce page layout
 
+Goal of the game: Beat the dealer by getting as close to 21 without going over
+
 Rules:
 - Deal Hand: deals two cards to the player and one to the dealer, starts the round, locks bets
 - Hit: deals another card to the player
