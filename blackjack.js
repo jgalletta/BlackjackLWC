@@ -140,10 +140,12 @@ export default class Blackjack extends LightningElement {
             "You won " +
             (parseInt(this.mybet * 1.5, 10) + this.mybet) +
             " chips.  Another hand?";
+          this.mybet = 0;
           this.canbet = "True";
           this.candd = "False";
           this.canhit = "False";
           this.canstand = "False";
+          this.bust = "True";
         }
       }
     }
